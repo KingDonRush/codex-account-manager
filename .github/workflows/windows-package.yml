@@ -1,0 +1,46 @@
+name: Public Windows package
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 35
+    env:
+      CARGO_BUILD_JOBS: 4
+      RUSTFLAGS: '-C target-feature=+crt-static --remap-path-prefix=C:\Users\runneradmin=C:\build --remap-path-prefix=D:\a=D:\build'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - run: npm ci
+      - run: npm run check
+      - run: npm run test:unit
+      - run: npm run sdk:build
+      - run: npm run build
+      - run: npm run runtime:prepare
+      - name: Compile public Windows binaries
+        run: cargo build --manifest-path src-tauri/Cargo.toml --release --bins --features custom-protocol --locked
+      - name: Package public source only
+        run: npm run tauri bundle -- --config src-tauri/tauri.bundle-windows.conf.json --bundles nsis --features custom-protocol --ci
+      - name: Stage candidate and checksums
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $files = @(Get-ChildItem src-tauri/target/release/bundle/nsis/*.exe)
+          if ($files.Count -ne 1) { throw 'Expected exactly one public installer' }
+          New-Item -ItemType Directory public-package | Out-Null
+          $target = 'public-package/codex-account-manager_0.5.0-alpha.8-public.1_x64-setup.exe'
+          Copy-Item $files[0].FullName $target
+          $digest = (Get-FileHash $target -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$digest  $(Split-Path $target -Leaf)" | Set-Content public-package/SHA256SUMS -Encoding ascii
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-public-candidate
+          path: public-package/
+          retention-days: 1
+          if-no-files-found: error
