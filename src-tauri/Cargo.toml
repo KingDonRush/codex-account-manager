@@ -1,0 +1,93 @@
+[package]
+name = "codex-account-manager"
+version = "0.5.0-alpha.8"
+description = "Gerenciador local de contas e perfis do Codex"
+authors = ["Codex Account Manager"]
+edition = "2021"
+rust-version = "1.89"
+default-run = "codex-account-manager"
+
+[lib]
+name = "codex_account_manager_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[[bin]]
+name = "codex-account-manager"
+path = "src/main.rs"
+
+[[bin]]
+name = "codex-account-manager-cli"
+path = "src/bin/integration_cli.rs"
+
+[build-dependencies]
+tauri-build = { version = "2.4.1", features = [] }
+
+[dependencies]
+tauri = { version = "2.11.6", features = ["tray-icon"] }
+tauri-plugin-updater = "2.12.0"
+tauri-plugin-single-instance = "2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.40.2", features = ["bundled", "backup"] }
+r2d2 = "0.8.10"
+r2d2_sqlite = "0.35.0"
+keyring-core = "1.0.0"
+uuid = { version = "1.18", features = ["v4", "serde"] }
+chrono = { version = "0.4.42", features = ["serde", "clock"] }
+thiserror = "2.0"
+dirs = "6.0"
+url = "2.5"
+tungstenite = { version = "0.30.0", default-features = false, features = ["handshake"] }
+socket2 = "0.6"
+sha2 = "0.10"
+hex = "0.4"
+ureq = { version = "3.1", features = ["json", "rustls"] }
+open = "5.3"
+which = "8.0"
+tempfile = "3.23"
+parking_lot = "0.12"
+scopeguard = "1.2.0"
+tokio = { version = "1.53.1", features = ["process", "io-util", "time", "net"] }
+libc = "0.2"
+sysinfo = { version = "0.36.1", default-features = false, features = ["system"] }
+ed25519-dalek = "2.1.1"
+getrandom = "0.3"
+ring = "0.17.14"
+zeroize = "1.9"
+base64 = "0.22.1"
+zip = { version = "4.2.0", default-features = false, features = ["deflate"] }
+
+[target.'cfg(windows)'.dependencies]
+windows-native-keyring-store = "1.0.0"
+winreg = "0.55.0"
+windows = { version = "0.61.3", features = [
+  "ApplicationModel",
+  "Data_Xml_Dom",
+  "Management_Deployment",
+  "Storage",
+  "Storage_Search",
+  "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_Security",
+  "Win32_Security_Authorization",
+  "Win32_Storage_Packaging_Appx",
+  "Win32_System_Com",
+  "Win32_System_Diagnostics_ToolHelp",
+  "Win32_System_JobObjects",
+  "Win32_System_Pipes",
+  "Win32_System_LibraryLoader",
+  "Win32_System_RemoteDesktop",
+  "Win32_System_RestartManager",
+  "Win32_System_Threading",
+  "Win32_System_WinRT",
+  "Win32_UI_Shell",
+  "Win32_UI_Shell_Common",
+  "Win32_UI_WindowsAndMessaging"
+] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+zbus-secret-service-keyring-store = { version = "1.0.1", features = ["crypto-rust"] }
+secret-service = { version = "5.2.0", features = ["crypto-rust"] }
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]

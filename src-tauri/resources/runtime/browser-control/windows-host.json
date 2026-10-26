@@ -1,0 +1,7 @@
+{
+  "name": "com.codex.account_manager.browser",
+  "description": "Codex Account Manager private browser bridge",
+  "path": "..\\..\\codex-account-manager-cli.exe",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://cjobpmmgbncdflmiccbcjfpghmlnkbhg/"]
+}

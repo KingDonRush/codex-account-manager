@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Gerenciador · controle privado de abas",
+  "version": "1.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzs9radr3nKBoBpc9mQ20wgeBXCTVGwhkp75QPKwWb6jQ1ytu4l3Ww4liCuOssDBAaeP9wPDCRruxypae5ctkTHs4tOFOP96sM+hf9iWRfviKg5MdRBitoDsI80kzh0KVg3QUaAxhOZoCR3qOgZCOqTJAUd+A3qlVgojpRX2k/sCNH6l+M8qIp6Z94rWV/J/XrTMurnY39x0lgQa5CeYu2FqvgJqZ2A/kcpCRe7hDfOsaemnGONvtuq+kHvrEIZd+p2t8teOIXVuAh8ASS39AOWuTsBENxx9igHC2tV8IGzThBA8MNasY5TzRIoBouFrTIK86axOIrYMQPLzyaJLFrwIDAQAB",
+  "permissions": ["nativeMessaging"],
+  "background": {"service_worker": "worker.js"}
+}

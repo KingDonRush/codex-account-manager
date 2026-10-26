@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Codex Account Manager</title><desc id="desc">Suas contas. Seu saldo. Seus apps. Gerenciamento desktop local para Linux e Windows.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10131d"/><stop offset="1" stop-color="#222036"/></linearGradient><linearGradient id="accent" x2="1" y2="1"><stop stop-color="#b8a5ff"/><stop offset="1" stop-color="#7862ec"/></linearGradient></defs>
+<rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+<rect x="58" y="56" width="54" height="54" rx="16" fill="#36304d"/>
+<g fill="none" stroke="#baaaff" stroke-width="2.6"><rect x="72" y="70" width="10" height="10" rx="2"/><rect x="88" y="70" width="10" height="10" rx="2"/><rect x="72" y="86" width="10" height="10" rx="2"/><rect x="88" y="86" width="10" height="10" rx="2"/></g>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif"><text x="128" y="91" fill="#e9e5f9" font-size="25" font-weight="650">Codex Account Manager</text>
+<text x="58" y="177" fill="#ffffff" font-size="48" font-weight="720">Suas contas. Seu saldo.</text><text x="58" y="235" fill="url(#accent)" font-size="48" font-weight="720">Seus apps. Um só lugar.</text>
+<text x="60" y="302" fill="#b9b7ca" font-size="19">Desktop local · Linux + Windows · Rust / Tauri / Svelte</text></g>
+<g transform="translate(835 68)"><rect width="300" height="222" rx="17" fill="#1c1e2b" stroke="#3e3b53"/><circle cx="27" cy="27" r="5" fill="#8875ef"/><rect x="45" y="21" width="119" height="11" rx="5" fill="#5b566d"/>
+<rect x="20" y="53" width="260" height="44" rx="9" fill="#2c293f"/><circle cx="41" cy="75" r="10" fill="#9e87f5"/><rect x="62" y="68" width="95" height="7" rx="3" fill="#d6ceee"/><rect x="185" y="70" width="72" height="7" rx="3" fill="#7ed4bd"/>
+<rect x="20" y="106" width="260" height="44" rx="9" fill="#252634"/><circle cx="41" cy="128" r="10" fill="#69617f"/><rect x="62" y="121" width="77" height="7" rx="3" fill="#b0a8c7"/><rect x="185" y="123" width="49" height="7" rx="3" fill="#bcabf5"/>
+<rect x="20" y="159" width="260" height="44" rx="9" fill="#252634"/><circle cx="41" cy="181" r="10" fill="#69617f"/><rect x="62" y="174" width="109" height="7" rx="3" fill="#b0a8c7"/><rect x="185" y="176" width="61" height="7" rx="3" fill="#7ed4bd"/></g>
+</svg>

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Gerenciador de contas do Codex",
+  "version": "0.5.0-alpha.8",
+  "identifier": "com.codex.account-manager",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run sdk:build && npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Gerenciador de contas do Codex",
+        "width": 1180,
+        "height": 790,
+        "minWidth": 860,
+        "minHeight": 620,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' asset: http://asset.localhost data:; connect-src ipc: http://ipc.localhost; object-src 'none'; base-uri 'none'; frame-src 'none'; form-action 'none'",
+      "devCsp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src ipc: http://ipc.localhost http://127.0.0.1:1420 ws://127.0.0.1:1420; object-src 'none'; base-uri 'none'; frame-src 'none'",
+      "capabilities": ["default"]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "windows": { "nsis": { "installMode": "currentUser" } },
+    "targets": ["nsis", "appimage", "deb"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": {
+      "resources/runtime/chromium/": "runtime/chromium/",
+      "resources/runtime/browser-control/": "runtime/browser-control/",
+      "../integration/python/pyproject.toml": "integration/python/pyproject.toml",
+      "../integration/python/codex_account_manager.py": "integration/python/codex_account_manager.py",
+      "../integration/python/codex_account_manager_harness.py": "integration/python/codex_account_manager_harness.py",
+      "../integration/typescript/package.json": "integration/typescript/package.json",
+      "../integration/typescript/dist/": "integration/typescript/dist/",
+      "../docs/local-api-v2.md": "docs/local-api-v2.md",
+      "../docs/security-0.5.md": "docs/security-0.5.md",
+      "../docs/integration-harnesses.md": "docs/integration-harnesses.md",
+      "../docs/hotfix-upgrade-0.3-0.5.md": "docs/hotfix-upgrade-0.3-0.5.md"
+    },
+    "createUpdaterArtifacts": false
+  },
+  "plugins": {
+    "updater": {
+      "endpoints": [],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEREMjZGQ0E4QkVBMjdFQkYKUldTL2ZxSytxUHdtM1FtQUYyKysrdU56a2kxUmdTcFdsVW9HREZXVm13L3ZmTWRjK25JU0t3K2gK",
+      "requireSignedVersion": true
+    }
+  }
+}

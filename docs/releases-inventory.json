@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "description": "Historical inventory only. Hashes identify original private builds; they are not download links or evidence of current verification.",
+  "versions": [
+    {
+      "version": "0.3.0",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "Gerenciador de contas do Codex_0.3.0_amd64.AppImage",
+          "platform": "linux-x64",
+          "size": 254994936,
+          "sha256": "41219c36599455eb56693000aa95929428243f9c1fd0a582c23a09fc6ae334b5",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        },
+        {
+          "name": "Gerenciador de contas do Codex_0.3.0_amd64.deb",
+          "platform": "linux-x64",
+          "size": 192335476,
+          "sha256": "946909c328fbfbad935f2e1e2aa1299db36b1c3448eeee2168ff856a8b5d1233",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        },
+        {
+          "name": "Gerenciador de contas do Codex_0.3.0_x64-setup.exe",
+          "platform": "windows-x64",
+          "size": 153944119,
+          "sha256": "4f495f797034be17914b84f9f91b250f7888fc5e28d7e43cb57ff6917fa293f9",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.3.1",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "Gerenciador de contas do Codex_0.3.1_amd64.AppImage",
+          "platform": "linux-x64",
+          "size": 255060472,
+          "sha256": "e2de4bd3afc620cf44c18ef920f8e21b44f986025f320a011ce4b137b2b8842c",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        },
+        {
+          "name": "Gerenciador de contas do Codex_0.3.1_amd64.deb",
+          "platform": "linux-x64",
+          "size": 192397460,
+          "sha256": "7f1184694b12daf8a09e9581e885cd17f6117592faeceb8e5022c6f30017bdd9",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        },
+        {
+          "name": "Gerenciador de contas do Codex_0.3.1_x64-setup.exe",
+          "platform": "windows-x64",
+          "size": 153970412,
+          "sha256": "58be35abb092e9e837b9f35560077a1c850e025da9233e357b9222abe6bb3ed3",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.3.2",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "Gerenciador de contas do Codex_0.3.2_amd64.AppImage",
+          "platform": "linux-x64",
+          "size": 255068664,
+          "sha256": "810704b388d158826fd7338cf0c5d9ff80f35b51c58c8c003ce9ea0decf64877",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        },
+        {
+          "name": "Gerenciador de contas do Codex_0.3.2_amd64.deb",
+          "platform": "linux-x64",
+          "size": 192410980,
+          "sha256": "af3031bfb87bddfa7828fd60a74de0aaf31ecfe9e1c55e6486b05428d10e7e09",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.3.3",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "codex-account-manager_0.3.3_amd64.deb",
+          "platform": "linux-x64",
+          "size": 192543244,
+          "sha256": "3dcea2dd27db3f7d96cfff3d26dc0c7f96ceada795559947a588b337a326f8df",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.5.0-alpha.2",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "codex-account-manager_0.5.0~alpha.2_amd64.deb",
+          "platform": "linux-x64",
+          "size": 149306376,
+          "sha256": "f656b81371352b3995b79e9206bb11c81045a3799fe05e948fa38242c6147965",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        },
+        {
+          "name": "codex-account-manager_0.5.0-alpha.2_x64-setup.exe",
+          "platform": "windows-x64",
+          "size": 156922140,
+          "sha256": "f36eca53aa2d01f61714223d215e033d0b7eeec808f5195690b9e5c7de5b8fc7",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.5.0-alpha.3",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "codex-account-manager_0.5.0~alpha.3_amd64.deb",
+          "platform": "linux-x64",
+          "size": 149777668,
+          "sha256": "ea227d623575f0d11164146702b18c6bb4e1a6ecdb9f2459920b5c091a066f26",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        },
+        {
+          "name": "codex-account-manager_0.5.0-alpha.3_x64-setup.exe",
+          "platform": "windows-x64",
+          "size": 157320881,
+          "sha256": "a8986df44a25105b5a4a71fe52dd65590e616ae98a04bc4ed66cf439fb5de248",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.5.0-alpha.4",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "codex-account-manager_0.5.0-alpha.4_x64-setup.exe",
+          "platform": "windows-x64",
+          "size": 157467463,
+          "sha256": "ca55a35faf93f7c00b342b7569a7febfc0496259186886ffebd93796a323d9e8",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.5.0-alpha.5",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "codex-account-manager_0.5.0~alpha.5_amd64.deb",
+          "platform": "linux-x64",
+          "size": 149785744,
+          "sha256": "cafdf435c79fefc6ae7618291f15bd28534f7afc83fac89951594710b372ac52",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        },
+        {
+          "name": "codex-account-manager_0.5.0-alpha.5_x64-setup.exe",
+          "platform": "windows-x64",
+          "size": 157484430,
+          "sha256": "bdd25c02071a2fd30796fd8b8dba249d0a3bcfe1c6cd9a456642aa68ed9ba0b7",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.5.0-alpha.6",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "codex-account-manager_0.5.0~alpha.6_amd64.deb",
+          "platform": "linux-x64",
+          "size": 149870864,
+          "sha256": "f93b3fca2c9c904c0c15da5a5152a6c80077f75ec8d66acdac5b5327b752362e",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        },
+        {
+          "name": "codex-account-manager_0.5.0-alpha.6_x64-setup.exe",
+          "platform": "windows-x64",
+          "size": 158200957,
+          "sha256": "b044724deebb8a0cf5221695897fe6c60e9874b5ff96cd36e2d07fc62cc6af77",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.5.0-alpha.7",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "codex-account-manager_0.5.0-alpha.7_x64-setup.exe",
+          "platform": "windows-x64",
+          "size": 158110495,
+          "sha256": "c45e1269ff6a4ea084cc6165b992335d455b88b6def15f49a6dafa9ce32ae8a2",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    },
+    {
+      "version": "0.5.0-alpha.8",
+      "kind": "historical-inventory",
+      "sourceRevisionAvailable": false,
+      "artifacts": [
+        {
+          "name": "codex-account-manager_0.5.0~alpha.8_amd64.deb",
+          "platform": "linux-x64",
+          "size": 149883628,
+          "sha256": "aa9c209b4f4f190c677452274e62fb154c30cdb5a783e1dcb657e23a2858e69b",
+          "publiclyDistributed": false,
+          "reason": "Original development artifact withheld: embedded local build paths and/or internal documentation; historical source revision not reconstructed."
+        }
+      ]
+    }
+  ]
+}
