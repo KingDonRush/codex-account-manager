@@ -22,6 +22,8 @@ jobs:
       - run: npm run test:unit
       - run: npm run sdk:build
       - run: npm run build
+      - name: Verify signed runtime manifest before compilation
+        run: node scripts/verify-runtime-manifest.mjs
       - run: npm run runtime:prepare
       - name: Compile public Windows binaries
         run: cargo build --manifest-path src-tauri/Cargo.toml --release --bins --features custom-protocol --locked
